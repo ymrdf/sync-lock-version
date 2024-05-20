@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "postcss-plugin-namespace": "^0.0.1",
+    "react": "^15",
+    "reduce": "^1.0.0",
+    "use-reducer-thunk": "^1.0.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-loader": "^8.0.0"
+  },
+  "packageManager": "yarn@4.2.2"
+}

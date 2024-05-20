@@ -1,0 +1,9 @@
+.npmignore
+.gitignore
+src/
+test/
+node_modules/
+tslint.json
+.prettierrc.json
+.vscode/
+.git/

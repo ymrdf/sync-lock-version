@@ -1,0 +1,57 @@
+{
+  "name": "sync-lock-version",
+  "version": "0.0.1",
+  "description": "Syncs versions in lock file into package.json file, removing dynamic numbers such as with ^.",
+  "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "compile": "rimraf lib/ && tsc --resolveJsonModule",
+    "test:lib": "node ./lib/index.js -d /Users/gaozhenqian/my/sync-lock-version/test/npm/workspace --save",
+    "test": "node --loader ts-node/esm ./src/index.ts -d /Users/gaozhenqian/my/sync-lock-version/test/yarn2/workspace"
+  },
+  "preferGlobal": "true",
+  "bin": {
+    "sync-lock-version": "./lib/index.js"
+  },
+  "keywords": [
+    "lock",
+    "version",
+    "npm",
+    "pnpm",
+    "yarn",
+    "package.json"
+  ],
+  "files": [
+    "lib",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ymrdf/sync-lock-version"
+  },
+  "bugs": {
+    "url": "https://github.com/ymrdf/sync-lock-version/issues"
+  },
+  "author": "ymrdf",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/node": "^20.12.12",
+    "rimraf": "^2.6.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "@pnpm/lockfile-file": "^9.0.4",
+    "@types/chalk": "^2.2.0",
+    "@yarnpkg/core": "^4.0.5",
+    "@yarnpkg/lockfile": "^1.1.0",
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "esbuild": "^0.21.2",
+    "glob": "^7.1.4",
+    "js-yaml": "^4.1.0",
+    "write-json-file": "^5.0.0"
+  }
+}

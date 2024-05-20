@@ -1,0 +1,25 @@
+{
+  "name": "main",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "postcss-plugin-namespace": "^0.0.1",
+    "react": "^18.0.0",
+    "reduce": "^1.0.0",
+    "use-reducer-thunk": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-loader": "^9.0.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "packageManager": "yarn@4.2.2"
+}
