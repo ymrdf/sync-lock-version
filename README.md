@@ -1,18 +1,8 @@
 # sync-lock-version
 
-Syncs `package-lock.josn`, `pnpm-lock.yaml` or `yarn.lock` versions into `package.json` file, removing dynamic numbers such as with ^, keeping static versions intact.
+Syncs `package-lock.json`, `pnpm-lock.yaml` or `yarn.lock` versions into `package.json` file, removing dynamic numbers such as with ^, keeping static versions intact.
 
 ## Install
-
-#### YARN
-
-```bash
-yarn global add sync-lock-version
-```
-
-### or
-
-#### NPM
 
 ```bash
 npm install -g sync-lock-version
