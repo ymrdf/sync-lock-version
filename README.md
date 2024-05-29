@@ -2,6 +2,8 @@
 
 Syncs `package-lock.json`, `pnpm-lock.yaml` or `yarn.lock` versions into `package.json` file, removing dynamic numbers such as with ^, keeping static versions intact.
 
+It is helpful to switch between npm, pnpm, and yarn as your package manager.
+
 ## Install
 
 ```bash
@@ -27,7 +29,7 @@ Options:
                                  convert, seperate by comma if more than one, to not replace git and link you would use +,link:
   -h, --help                     display help for command
 
-  Examples:
-  perform inside a directory with lock file and package.json, will output package-new.json in the same directory.
 
 ```
+
+Usually, you just need run sync-lock-version inside a directory with lock file and package.json. It will output a package-new.json in the same directory.
